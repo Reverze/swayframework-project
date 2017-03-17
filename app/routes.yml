@@ -1,0 +1,10 @@
+---
+routes:
+    helloWorld:
+        path: /
+        controller: Yuzi\Controller\ExampleController
+        action:
+            -
+                path: /
+                listener: indexAction
+                method: [ GET, POST ]

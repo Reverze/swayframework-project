@@ -1,0 +1,28 @@
+{
+    "name": "rev/sway-framework",
+    "description": "Swayframework application directory structure",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Reverze",
+            "email": "hawkmedia24@gmail.com"
+        }
+    ],
+    "require": {
+        "rev/sway-framework-standard": "dev-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "extra": {
+        "sway-framework-tmp-dir": "tmp"
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "Sway\\Distribution\\Composer\\EventHandler::onPostUpdate"
+        ]
+    },
+    "minimum-stability": "dev"
+}

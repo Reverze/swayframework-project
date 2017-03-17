@@ -1,0 +1,18 @@
+#!/usr/bin/env php
+
+<?php
+
+require_once ('app.controller.php');
+
+use Sway\Component\Console\Input\ArgvInput;
+
+$input = new ArgvInput();
+
+
+$initController->initFrom('config.yml', 'dev');
+$initController->run($input);
+
+
+
+
+?>
