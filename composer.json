@@ -1,6 +1,6 @@
 {
     "name": "rev/sway-framework",
-    "description": "SwayFramework Standard Distribution",
+    "description": "Swayframework application directory structure",
     "type": "project",
     "authors": [
         {
@@ -9,20 +9,13 @@
         }
     ],
     "require": {
-        "rev/sway-framework-standard": "dev-master"
+        "rev/sway-framework-standard": "dev-dev"
     },
     "autoload": {
         "psr-4": {
             "": "src/"
         }
     },
-    "config": {
-        "secure-http": false
-    },
-    "repositories": [{
-        "type": "composer",
-        "url": "http://packagist.swayware.eu"
-    }],
     "extra": {
         "sway-framework-tmp-dir": "tmp"
     },
