@@ -1,0 +1,4 @@
+---
+framework:
+    event.register:
+        framework.eventOnFrameworkInited: Sway\Component\Event\Standard\FrameworkInitedEvent

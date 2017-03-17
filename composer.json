@@ -1,0 +1,35 @@
+{
+    "name": "rev/sway-framework",
+    "description": "SwayFramework Standard Distribution",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Reverze",
+            "email": "hawkmedia24@gmail.com"
+        }
+    ],
+    "require": {
+        "rev/sway-framework-standard": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "config": {
+        "secure-http": false
+    },
+    "repositories": [{
+        "type": "composer",
+        "url": "http://packagist.swayware.eu"
+    }],
+    "extra": {
+        "sway-framework-tmp-dir": "tmp"
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "Sway\\Distribution\\Composer\\EventHandler::onPostUpdate"
+        ]
+    },
+    "minimum-stability": "dev"
+}

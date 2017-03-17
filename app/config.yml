@@ -1,0 +1,10 @@
+---
+#You must declare application property if you want to use swayengine extension
+#application:
+#    identifier: example_application
+#    mode: default
+framework:
+    routing:
+        yaml.require:
+            - routes.yml
+    global: [ service, parameter ] 
