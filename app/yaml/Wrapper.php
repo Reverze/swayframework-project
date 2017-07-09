@@ -58,8 +58,8 @@ class YamlWrapper
             }
         }
         
-        throw new \Exception (sprintf("File on path '%s' not exists",
-                realpath($realPath)));       
+        throw new \Exception (sprintf("File on path '%s..%s' not exists",
+                $workingDirectory, $filePath));
     }
     
     /**
